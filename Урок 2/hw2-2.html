@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    var summ = parseFloat(prompt("Введите сумму вклада: "));
+    var percent = parseFloat(prompt("Введите процент для начисления: "));
+
+    percent = percent / 100;
+
+    var year1 = summ + (summ * percent);
+    var year2 = year1 + (year1 * percent);
+    var year3 = year2 + (year2 * percent);
+    var year4 = year3 + (year3 * percent);
+    var year5 = year4 + (year4 * percent);
+
+    alert("Изменение размера вклада по годам:\n" +
+        "1 год: " + year1.toFixed(2) + " рублей\n" +
+        "2 год: " + year2.toFixed(2) + " рублей\n" +
+        "3 год: " + year3.toFixed(2) + " рублей\n" +
+        "4 год: " + year4.toFixed(2) + " рублей\n" +
+        "5 год: " + year5.toFixed(2) + " рублей\n")
+
+</script>
