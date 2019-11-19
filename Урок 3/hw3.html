@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function askQuestion(question, answer){
+        var userAnswer = prompt(question);
+        userAnswer = userAnswer.toLowerCase();
+        for(var i=0; i<answer.length; i++){
+            if(userAnswer == answer[i]){
+                alert("Это правильный ответ");
+                score++;
+                return;
+            }
+        }
+        alert("Вы не угадали");
+    }
+
+    var score = 0;
+
+    var questions = [
+        ["Что можно увидеть с закрытыми глазами?", ["сон", "сновидение"]],
+        ["Какой болезнью никто не болеет на суше?", ["морской", "укус акулой"]],
+        ["Какой конь не есть овса?", ["шахматный", "мертвый"]]
+    ];
+
+    for(var i=0; i<questions.length; i++){
+        askQuestion(questions[i][0], questions[i][1]);
+    }
+    
+    alert("Вы угадали " + score + " загадок");
+
+</script>
