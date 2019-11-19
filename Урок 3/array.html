@@ -1,8 +1,13 @@
 <meta charset="utf-8">
 <script type="text/javascript">
 
-    var numbers = [42, 56, 96, 14, 28];
+    var numbers = [];
 
+    for(var i=0; i<5; i++){
+        var randomNumber = parseInt(Math.random() * 100);
+        numbers.push(randomNumber);
+    }
+    
     alert("Запомните числа и их порядок: " + numbers);
 
     var userAnswer = +prompt("Каким было первое число?");
