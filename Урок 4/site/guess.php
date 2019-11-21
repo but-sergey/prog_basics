@@ -45,24 +45,23 @@
 <body>
 
 <div class="content">
-	<div class="header">
-		<a href="index.html">Главная</a>
-		<a href="puzzle.html">Загадки</a>
-		<a href="#">Угадайка</a>
-	</div>
+	<?php
+		include "menu.php"
+	?>
+	
+	<div class="contentWrap">
+		<div class="content">
+			<div class="center">
+				<h1>Игра угадайка</h1>
 
-<div class="contentWrap">
-	<div class="content">
-		<div class="center">
-			<h1>Игра угадайка</h1>
+				<div class="box">
 
-			<div class="box">
+					<p id="info">Угадайте число от 0 до 100</p>
+					<input type="text" id="userAnswer">
+					<br>
+					<a href="#" onclick="guess()" id="button">Начать</a>
 
-				<p id="info">Угадайте число от 0 до 100</p>
-				<input type="text" id="userAnswer">
-				<br>
-				<a href="#" onclick="guess()" id="button">Начать</a>
-
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,7 +69,7 @@
 
 <div class="footer">
 	Copyright &copy; Sergey But
-<div>
+</div>
 
 
 </body>
