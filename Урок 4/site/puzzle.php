@@ -83,7 +83,7 @@
 </div>
 
 <div class="footer">
-	Copyright &copy; Sergey But
+	Copyright &copy; <?php echo date("Y");?> Sergey But
 </div>
 
 
