@@ -161,6 +161,7 @@ body {
 }
 
 .footer { /* # == id */
+    min-width: 1300px;
     background-color: #434445;
     width: 100%;
     float: left;
